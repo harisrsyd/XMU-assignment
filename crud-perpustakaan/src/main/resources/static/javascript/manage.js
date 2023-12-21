@@ -1,22 +1,25 @@
 $(document).ready(function () {
 
-    fillTable(0, 5, '');
+    var pstatus = $('#pageStatus').val()
+    if (pstatus == 'manageBook') {
+        fillTable(0, 10, '');
+    }
 
     $('#search').keypress(function (e) {
         if (e.which == 13)  // the enter key code
         {
             var cari = $(this).val()
-            fillTable(0, 5, cari)
+            fillTable(0, 10, cari)
         }
     });
 
     $('#searchbtn').click(function () {
         var cari = $('#search').val()
-        fillTable(0, 5, cari)
+        fillTable(0, 10, cari)
     })
 
     $('#refresh').click(function () {
-        fillTable(0, 5, '')
+        fillTable(0, 10, '');
     })
 
     $('#addData').click(function () {
@@ -214,8 +217,8 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 $('#modalBooks').modal('hide')
+                location.reload();
             }
         })
     }
-
 })
