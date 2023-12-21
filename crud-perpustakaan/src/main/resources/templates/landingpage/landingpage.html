@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLibrary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <!------top-navbar-start----------->
+        <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #c49538;">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-0 h1 fs-2" href="#">
+                    <img src="/image/ebook.png" width="39" height="33" class="d-inline-block align-text-top">
+                    Online Library</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="#Catalogue">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="http://localhost/manage">Manage Books</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------top-navbar-end----------->
+
+        <!------carousel-start------->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/image/library.jpg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>- Ali bin Abi Thalib -</h1>
+                        <h3>Anyone who is entertained by books, happiness will not disappear from him.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/bookcases.jpg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>- Ali bin Abi Thalib -</h1>
+                        <h3>Anyone who is entertained by books, happiness will not disappear from him.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/books.jpg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>- Ali bin Abi Thalib -</h1>
+                        <h3>Anyone who is entertained by books, happiness will not disappear from him.</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!------carousel-end------->
+
+        <!------main-content-start----------->
+        <div class="col-sm-auto me-3 mx-3 p-6 my-3">
+            <div class="row" id="Catalogue">
+                <h1 class="">Book Catalogue</h1>
+                <p>Silahkan cari buku yang anda inginkan di katalog ini, anda dapat mencari berdasarkan judul buku, penulis, atau penerbit </p>
+                <form>
+                    <div class="input-group mb-5 align-self-center p-xxl-5">
+                        <input type="search" class="form-control form-control-lg border-warning" placeholder="Search by title, author, or publisher">
+                        <button class="btn btn-lg btn-outline-warning" type="submit" id="searchbtn">Search
+                            <span class="material-icons">search</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script type="text/Javascript" src="/javascript/main.js"></script>
+</html>

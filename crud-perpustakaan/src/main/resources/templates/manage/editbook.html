@@ -1,0 +1,41 @@
+<body>
+    <form class="row g-3">
+        <div class="col-md-12">
+            <label for="title" class="form-label">Book Title</label>
+            <div class="input-group">
+                <span class="input-group-text" id="idPlace"></span>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" required>
+        </div>
+        <div class="col-md-4">
+            <label for="publishYear" class="form-label">Publish Year</label>
+            <input type="text" class="form-control" id="publishYear" required>
+        </div>
+        <div class="col-md-12">
+            <label for="publisher" class="form-label">Publisher</label>
+            <input type="text" class="form-control" id="publisher" required>
+        </div>
+        <div class="col-md-6">
+            <label for="language" class="form-label">Language</label>
+            <input type="text" class="form-control" id="language" required>
+        </div>
+        <div class="col-md-6">
+            <label for="isbn" class="form-label">ISBN</label>
+            <input type="text" class="form-control" id="isbn" required>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Write notes here" id="notes" style="height: 100px"></textarea>
+                <label for="notes">Notes</label>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-primary" id="submitChange" type="submit">Submit Change</button>
+        </div>
+    </form>
+</body>
+<script type="text/JavaScript" src="/javascript/manage.js"></script>
